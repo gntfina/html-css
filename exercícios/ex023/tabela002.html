@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: rgb(54, 54, 54);
+            color: white;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: grey;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        .pos {
+            text-align: center;
+            width: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+    Anatomia Para Tabelas Grandes
+    TABLE
+        CAPTION
+        THEAD
+        TBOBY
+        TFOOT
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col" class="pos">Posição</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="pos">1</td>
+                <td>São Paulo</td>
+                <td class="num">46 081 801</td>
+            </tr>
+            <tr>
+                <td class="pos">2</td>
+                <td>Minas Gerais</td>
+                <td class="num">21 393 441</td>
+            </tr>
+            <tr>
+                <td class="pos">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 223 547</td>
+            </tr>
+            <tr>
+                <td class="pos">4</td>
+                <td>Bahia</td>
+                <td class="num">14 870 907</td>
+            </tr>
+            <tr>
+                <td class="pos">5</td>
+                <td>Paraná</td>
+                <td class="num">11 890 517</td>
+            </tr>
+            <tr>
+                <td class="pos">6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 233 263</td>
+            </tr>
+            <tr>
+                <td class="pos">7</td>
+                <td>Pernambuco</td>
+                <td class="num">9 562 007</td>
+            </tr>
+            <tr>
+                <td class="pos">8</td>
+                <td>Ceará</td>
+                <td class="num">9 268 836</td>
+            </tr>
+            <tr>
+                <td class="pos">9</td>
+                <td>Pará</td>
+                <td class="num">8 711 196</td>
+            </tr>
+            <tr>
+                <td class="pos">10</td>
+                <td>Santa Catarina</td>
+                <td class="num">8 187 029</td>
+            </tr>
+            <tr>
+                <td class="pos">11</td>
+                <td>Goiás</td>
+                <td class="num">7 423 629</td>
+            </tr>
+            <tr>
+                <td class="pos">12</td>
+                <td>Maranhão</td>
+                <td class="num">7 018 21</td>
+            </tr>
+            <tr>
+                <td class="pos">13</td>
+                <td>Amazonas</td>
+                <td class="num">4 321 616</td>
+            </tr>
+            <tr>
+                <td class="pos">14</td>
+                <td>Paraíba</td>
+                <td class="num">4 164 468</td>
+            </tr>
+            <tr>
+                <td class="pos">15</td>
+                <td>Espírito Santo</td>
+                <td class="num">4 126 854</td>
+            </tr>
+            <tr>
+                <td class="pos">16</td>
+                <td>Mato Grosso</td>
+                <td class="num">3 893 659</td>
+            </tr>
+            <tr>
+                <td class="pos">17</td>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 455 236</td>
+            </tr>
+            <tr>
+                <td class="pos">18</td>
+                <td>Piauí</td>
+                <td class="num">3 384 547</td>
+            </tr>
+            <tr>
+                <td class="pos">19</td>
+                <td>Alagoas</td>
+                <td class="num">3 220 848</td>
+            </tr>
+            <tr>
+                <td class="pos">20</td>
+                <td>Distrito Federal</td>
+                <td class="num">2 996 899</td>
+            </tr>
+            <tr>
+                <td class="pos">21</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 924 631</td>
+            </tr>
+            <tr>
+                <td class="pos">22</td>
+                <td>Sergipe</td>
+                <td class="num">2 299 425</td>
+            </tr>
+            <tr>
+                <td class="pos">23</td>
+                <td>Rondônia</td>
+                <td class="num">1 751 950</td>
+            </tr>
+            <tr>
+                <td class="pos">24</td>
+                <td>Tocantins</td>
+                <td class="num">1 586 859</td>
+            </tr>
+            <tr>
+                <td class="pos">25</td>
+                <td>Acre</td>
+                <td class="num">884 372</td>
+            </tr>
+            <tr>
+                <td class="pos">26</td>
+                <td>Amapá</td>
+                <td class="num">806 517</td>
+            </tr>
+            <tr>
+                <td class="pos">27</td>
+                <td>Roraima</td>
+                <td class="num">738 772</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="2">Total de Habitantes</th>
+                <td class="num"><strong>213 421 037</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt explicabo sapiente earum, deserunt quis nulla rem tempora sit error a, eligendi iure velit consectetur eaque nam natus obcaecati et aliquid. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quas voluptates repellendus officiis blanditiis iure ipsum, praesentium, eos nihil voluptatum molestiae voluptate, deserunt asperiores! Sit nemo quibusdam saepe ratione voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis unde voluptates, perspiciatis dolor ipsam beatae porro nobis, enim quia minus accusantium sed consequuntur commodi ab, at eius illum a in? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit, iusto provident eius aperiam ipsa, sunt recusandae doloremque fugiat praesentium omnis earum distinctio hic accusamus temporibus eveniet sint. Repellat, voluptas.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt explicabo sapiente earum, deserunt quis nulla rem tempora sit error a, eligendi iure velit consectetur eaque nam natus obcaecati et aliquid. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quas voluptates repellendus officiis blanditiis iure ipsum, praesentium, eos nihil voluptatum molestiae voluptate, deserunt asperiores! Sit nemo quibusdam saepe ratione voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis unde voluptates, perspiciatis dolor ipsam beatae porro nobis, enim quia minus accusantium sed consequuntur commodi ab, at eius illum a in? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit, iusto provident eius aperiam ipsa, sunt recusandae doloremque fugiat praesentium omnis earum distinctio hic accusamus temporibus eveniet sint. Repellat, voluptas.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt explicabo sapiente earum, deserunt quis nulla rem tempora sit error a, eligendi iure velit consectetur eaque nam natus obcaecati et aliquid. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quas voluptates repellendus officiis blanditiis iure ipsum, praesentium, eos nihil voluptatum molestiae voluptate, deserunt asperiores! Sit nemo quibusdam saepe ratione voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis unde voluptates, perspiciatis dolor ipsam beatae porro nobis, enim quia minus accusantium sed consequuntur commodi ab, at eius illum a in? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit, iusto provident eius aperiam ipsa, sunt recusandae doloremque fugiat praesentium omnis earum distinctio hic accusamus temporibus eveniet sint. Repellat, voluptas.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt explicabo sapiente earum, deserunt quis nulla rem tempora sit error a, eligendi iure velit consectetur eaque nam natus obcaecati et aliquid. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quas voluptates repellendus officiis blanditiis iure ipsum, praesentium, eos nihil voluptatum molestiae voluptate, deserunt asperiores! Sit nemo quibusdam saepe ratione voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis unde voluptates, perspiciatis dolor ipsam beatae porro nobis, enim quia minus accusantium sed consequuntur commodi ab, at eius illum a in? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit, iusto provident eius aperiam ipsa, sunt recusandae doloremque fugiat praesentium omnis earum distinctio hic accusamus temporibus eveniet sint. Repellat, voluptas.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt explicabo sapiente earum, deserunt quis nulla rem tempora sit error a, eligendi iure velit consectetur eaque nam natus obcaecati et aliquid. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quas voluptates repellendus officiis blanditiis iure ipsum, praesentium, eos nihil voluptatum molestiae voluptate, deserunt asperiores! Sit nemo quibusdam saepe ratione voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis unde voluptates, perspiciatis dolor ipsam beatae porro nobis, enim quia minus accusantium sed consequuntur commodi ab, at eius illum a in? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit, iusto provident eius aperiam ipsa, sunt recusandae doloremque fugiat praesentium omnis earum distinctio hic accusamus temporibus eveniet sint. Repellat, voluptas.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt explicabo sapiente earum, deserunt quis nulla rem tempora sit error a, eligendi iure velit consectetur eaque nam natus obcaecati et aliquid. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quas voluptates repellendus officiis blanditiis iure ipsum, praesentium, eos nihil voluptatum molestiae voluptate, deserunt asperiores! Sit nemo quibusdam saepe ratione voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis unde voluptates, perspiciatis dolor ipsam beatae porro nobis, enim quia minus accusantium sed consequuntur commodi ab, at eius illum a in? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit, iusto provident eius aperiam ipsa, sunt recusandae doloremque fugiat praesentium omnis earum distinctio hic accusamus temporibus eveniet sint. Repellat, voluptas.</p>
+</body>
+</html>
